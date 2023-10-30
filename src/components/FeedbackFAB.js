@@ -33,15 +33,15 @@ const FeedbackFAB = (props) => {
   }
 
   return (
-    <div className={divClass}>
-      {options.map((option) => {
-        return (
-          <FAbutton onClick={onOptionClick} disabled={isDisabled} type={option.type} img={option.img}/>
-        )
-      })}
-      <FAbutton onClick={closeOptions} disabled={isDisabled} type={'close-action'} img={RxCross2}/>
-      <FAbutton onClick={openOptions} disabled={!isDisabled} type={'main-action'} img={RiFileEditFill}/>
-    </div>
+      <div className={divClass}>
+        {options.map((option) => {
+          return (
+            <FAbutton onClick={onOptionClick} disabled={isDisabled} type={option.type} img={option.img}/>
+          )
+        })}
+        <FAbutton onClick={closeOptions} disabled={isDisabled} type={'close-action'} img={RxCross2}/>
+        <FAbutton onClick={openOptions} disabled={!isDisabled} type={'main-action'} img={RiFileEditFill}/>
+      </div>
   )
 
 }
