@@ -1,0 +1,32 @@
+.ans-card-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ans-card {
+  background-color: #DEE7FF;
+  min-width: 300px;
+  max-width: 832px;
+  padding: 0 10px 10px 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  color: black;
+}
+
+.ans-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.answer-desc {
+  padding: 0 25px;
+}
+
+.ans-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

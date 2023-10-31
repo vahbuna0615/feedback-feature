@@ -7,9 +7,10 @@
   margin-top: 10px;
   background-color: #F8F8F8;
   color: black;
-  width: 832px;
+  min-width: 300px;
+  max-width: 832px;
   border-radius: 8px;
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 5px 20px;
 }
 
 .tags {
@@ -17,14 +18,18 @@
 }
 
 .tags p {
-  background-color: rgb(0, 153, 255);
+  background-color: #A9D9FF;
   margin-right: 15px;
   padding: 5px;
   border-radius: 3px;
-  font-weight: 500;
 }
 
 .ques-card-footer {
+  padding: 0 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.question-headline {
+  font-size: 20px;
 }

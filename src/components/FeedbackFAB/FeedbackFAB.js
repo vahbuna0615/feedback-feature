@@ -1,5 +1,6 @@
 import { useState } from "react";
-import FAbutton from "./FAbutton";
+import './FeedbackFAB.css';
+import FAbutton from "../FAbutton/FAbutton";
 import { BsFlagFill } from 'react-icons/bs';
 import { MdThumbsUpDown } from 'react-icons/md';
 import { MdEditNote } from 'react-icons/md';
@@ -15,11 +16,11 @@ const FeedbackFAB = (props) => {
   const openOptions = () => {
     setDisabled(false);
     if (props.currentPage === 'landingPage'){
-      setOptions([{type: 'contact-us', img: LuMessagesSquare}]);
+      setOptions([{name: 'Contact Us', type: 'contact-us', img: LuMessagesSquare}]);
     } else if (props.currentPage === 'conceptCards'){
-      setOptions([{type: 'report-issue', img: BsFlagFill}, {type: 'share-feedback', img: MdThumbsUpDown}, {type: 'give-suggestions', img: MdEditNote}]);
+      setOptions([{name: 'Report Issue', type: 'report-issue', img: BsFlagFill}, {name: 'Share Feedback', type: 'share-feedback', img: MdThumbsUpDown}, {name: 'Give Suggestions', type: 'give-suggestions', img: MdEditNote}]);
     } else {
-      setOptions([{type: 'report-issue', img: BsFlagFill}, {type: 'share-feedback', img: MdThumbsUpDown}, {type: 'give-suggestions', img: MdEditNote}, {type: 'contact-us', img: LuMessagesSquare}])
+      setOptions([{name: 'Report Issue', type: 'report-issue', img: BsFlagFill}, {name: 'Share Feedback', type: 'share-feedback', img: MdThumbsUpDown}, {name: 'Give Suggestions', type: 'give-suggestions', img: MdEditNote}, {name: 'Contact Us', type: 'contact-us', img: LuMessagesSquare}])
     }
   }
 
@@ -34,9 +35,10 @@ const FeedbackFAB = (props) => {
 
   return (
       <div className={divClass}>
+
         {options.map((option) => {
           return (
-            <FAbutton onClick={onOptionClick} disabled={isDisabled} type={option.type} img={option.img}/>
+            <FAbutton onClick={onOptionClick} disabled={isDisabled} name={option.name} type={option.type} img={option.img}/>
           )
         })}
         <FAbutton onClick={closeOptions} disabled={isDisabled} type={'close-action'} img={RxCross2}/>

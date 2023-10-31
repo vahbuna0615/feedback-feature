@@ -1,139 +1,25 @@
 body {
   background-color: black;
   color: #F8F8F8;
-}
-
-.navbar {
-  background-color: black;
-  color: white;
-  padding: 10px 0 10px 0;
-  display: flex;
-  justify-content: space-between;
   font-family: Inter;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
-}
-
-.navbar div {
-  display: flex;
-  align-items: center;
-}
-
-.title {
-  margin-left: 20px;
-  flex: 2;
-}
-
-.nav-links {
-  margin-right: 20px;
-}
-
-.nav-links p {
-  margin-right: 50px;
-}
-
-#product {
-  background-color: white;
-  color: black;
-}
-
-.FAbox {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  justify-content: space-around;
-}
-
-.selec{
-  flex-direction: row;
-}
-
-.selec Button {
-  margin: 0 5px 0 5px;
-}
-
-.FAbutton {
-  margin-bottom: 10px;
-  background-color: #F8F8F8;
-  border-radius: 50%;
-  padding: 15px;
-  border: 1px solid black;
-}
-
-.FAbutton.open {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-20px);
-  transition: 200ms ease;
-}
-
-.FAbutton.closed {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(20px);
-  transition: 200ms ease;
-}
-
-.FAbutton.closed.main-action {
-  display: none;
-}
-
-.comp-name {
-  font-family: Montserrat;
-  font-size: 15px;
 }
 
 ul {
   list-style: none;
 }
 
-.login-dropdown{
-  position: absolute;
-  top: 60px;
-  right: 10px;
-  background-color: black;
-  color: #F8F8F8;
-  border-radius: 5px;
-  width: 115px;
-}
-
-.login-dropdown.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition: 200ms ease;
-}
-
-.login-dropdown.inactive {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: 200ms ease;
-}
-
-.login-dropdown ul li{
-  padding: 10px 0;
-  border-top: 1px solid rgb(255, 255, 255, 0.35);
-}
-
 .footer-menu {
+  margin-top: 50px;
   border-top: 1px solid rgba(128, 128, 128, 0.35);
   font-family: Inter;
-  position: absolute;
   height: 50px;
   width: 100%;
-  bottom: 0;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-  .nav-links p {
-    display: none;
-  }
-
-  .comp-name {
-    font-size: 10px;
-  }
+.footer-menu p {
+  font-size: 10px;
 }

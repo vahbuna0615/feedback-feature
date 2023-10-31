@@ -1,0 +1,116 @@
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 20px;
+  flex: 2;
+}
+
+.nav-links {
+  margin-right: 20px;
+}
+
+.nav-links p {
+  margin-right: 50px;
+}
+
+#product {
+  background-color: white;
+  color: black;
+}
+
+.comp-name {
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.user, .login-dropdown {
+  cursor: pointer;
+}
+
+.login-dropdown{
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: black;
+  color: #F8F8F8;
+  border: 1px solid #F8F8F8;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.prac-dropdown.active, .learn-dropdown.active, .login-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 200ms ease;
+}
+
+.prac-dropdown.inactive, .learn-dropdown.inactive, .login-dropdown.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 200ms ease;
+}
+
+.learn-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 200px;
+  border: 1px solid #F8F8F8;
+  background-color: black;
+  color: #F8F8F8;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.learn-dropdown a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.learn-dropdown li {
+  margin-bottom: 5px;
+}
+
+.prac-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  border: 1px solid #F8F8F8;
+  background-color: black;
+  color: #F8F8F8;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.prac-dropdown a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.prac-dropdown li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links p {
+    display: none;
+  }
+
+  .comp-name {
+    font-size: 10px;
+  }
+}

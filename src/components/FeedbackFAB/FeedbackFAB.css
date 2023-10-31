@@ -1,0 +1,31 @@
+.FAbox {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  justify-content: space-around;
+}
+
+.selec{
+  flex-direction: row;
+}
+
+.selec Button {
+  margin: 0 5px 0 5px;
+}
+
+.FAbutton.closed.main-action {
+  display: none;
+}
+
+.selec .button-name {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .FAbox {
+    bottom: 24px;
+    right: 24px;
+  }
+}
